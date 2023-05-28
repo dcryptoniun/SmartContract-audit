@@ -1,0 +1,30 @@
+Contract Name - ADC Token
+Contract Type - ERC20
+Compiler Version - v0.8.4
+License -MIT
+Total Supply - 5e+26(500000000000000000000000000)
+
+intial report : 
+Code Audit Report
+The contract code is a standard implementation of the ERC-20 token. The contract is implemented in Solidity version 0.8.4.
+
+Security
+The code is written using the OpenZeppelin library that provides well-audited, battle-tested security implementations for various functionalities.
+
+The contract uses SafeMath to prevent overflow and underflow vulnerabilities. Also, the transferFrom function implements a check to ensure that the spender has the allowance to spend the tokens.
+
+Style
+The code follows the standardized Solidity naming conventions for functions and variables.
+
+The code also includes inline comments, which help understand the code.
+
+Gas Optimization
+The contract uses using to minimize gas consumption for the SafeMath library.
+
+Recommendations
+There are no critical issues found in the code, and the implementation is satisfactory. However, some improvements could be made for readability and optimization.
+
+It would be better to add more inline comments to explain the code's working and functions' purpose.
+The version variable is unused, and it could be removed.
+It would be better to include the version of the ERC-20 interface that is being implemented, for clarity purposes.
+Overall, the code is secure and follows the standard conventions. It can be deployed safely.
