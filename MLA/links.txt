@@ -1,0 +1,4 @@
+ 1.Test3rdweb (t3w) - https://mumbai.polygonscan.com/address/0xFE85f6AB7e0881764ab7e3DE5f0D5A8Ae8804a92#readContract
+1.2. https://thirdweb.com/mumbai/0xFE85f6AB7e0881764ab7e3DE5f0D5A8Ae8804a92/settings
+3.MLA third web - https://thirdweb.com/polygon/0xC8F5969e50125B73C8CF77738c61896cb4c6A025/explorer
+3.2 MLA polygon - https://polygonscan.com/address/0xC8F5969e50125B73C8CF77738c61896cb4c6A025#readContract

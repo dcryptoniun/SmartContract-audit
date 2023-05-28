@@ -1,0 +1,96 @@
+Overall, the code seems to be well-written and follows best practices. The code has a number of features, including Contract Metadata, Platform Fee, Royalty, Primary Sale, Ownable, DelayedReveal, LazyMint, PermissionsEnumerable, and Drop.
+
+Here are some specific comments on the code:
+
+SPDX-License-Identifier: Apache-2.0 is included, indicating the license under which the code is released.
+The code uses Solidity version 0.8.11.
+The author is identified as thirdweb.
+The code imports several contracts from OpenZeppelin and other libraries.
+The contract inherits from several other contracts, including MulticallUpgradeable, DefaultOperatorFiltererUpgradeable, and ERC721AUpgradeable.
+The code includes several state variables, including transferRole, minterRole, MAX_BPS, and maxTotalSupply. There is an event, MaxTotalSupplyUpdated, that is emitted when the global max supply of tokens is updated.
+The constructor is empty, but there is an initialize() function that initializes the contract with the given parameters.
+The tokenURI() function returns the URI for a given tokenId.
+There are several modifiers, including onlyTransferRole() and onlyMinterRole(), which restrict access to certain functions.
+The code includes several functions for managing permissions, such as grantRole() and revokeRole().
+The code includes functions for managing token minting and transfer, such as mintToken() and transferToken().
+There are several functions related to the various features of the contract, such as setMaxTotalSupply(), setBaseURI(), and setRoyaltyInfo().
+The code includes an operator filter for OpenSea, which restricts access to certain functions to the owner and approved operators.
+Overall, the code appears to be well-designed and follows best practices. However, a more thorough audit would be necessary to identify any potential vulnerabilities or issues with the contract.
+
+potential threat - Admin can change royaltie %, wallet and even add his wallet for additonal royaltie
+
+
+1- defined claim condition - 
+    start date 17-03-2023 3:11 pm 
+    drop size - 50 NFTs
+    Mint Price - 0.025 weth
+    per wallet Limit - 10
+2. Roles 
+   Admin -1. 0xaD0467D741d65E3954248fEa502E900fb6C76ff9
+          2. 0x85E6C2B9c8E24Daa0E0F85CD97266b2Fe5964f74
+   Creator - 0xaD0467D741d65E3954248fEa502E900fb6C76ff9
+
+   Owner - 0x85e6c2b9c8e24daa0e0f85cd97266b2fe5964f74
+
+details - 
+ Name - META LEGEND APES
+ Symbol - MLA
+ Website -  https://www.metalegendapes.xyz
+ OpenSea -https://opensea.io/collection/meta-legend-apes
+ Total Supply - 5000
+ Minted/ claimed - 1 as of 20/03/2023
+
+ All lib. -
+IERC721AUpgradeable.sol
+IERC165Upgradeable.sol
+ERC165Upgradeable.sol
+StringsUpgradeable.sol
+MulticallUpgradeable.sol
+ContextUpgradeable.sol
+AddressUpgradeable.sol
+IERC721MetadataUpgradeable.sol
+IERC721Upgradeable.sol
+IERC721ReceiverUpgradeable.sol
+Initializable.sol
+IERC2981Upgradeable.sol
+SafeERC20.sol
+ERC2771ContextUpgradeable.sol
+TWStrings.sol
+TWAddress.sol
+MerkleProof.sol
+CurrencyTransferLib.sol
+IWETH.sol
+IRoyalty.sol
+IPrimarySale.sol
+IPlatformFee.sol
+IPermissionsEnumerable.sol
+IPermissions.sol
+IOwnable.sol
+IOperatorFilterToggle.sol
+IOperatorFilterRegistry.sol
+ILazyMint.sol
+IDrop.sol
+IDelayedReveal.sol
+IContractMetadata.sol
+IClaimConditionMultiPhase.sol
+IClaimCondition.sol
+Royalty.sol
+PrimarySale.sol
+PlatformFee.sol
+PermissionsEnumerable.sol
+Permissions.sol
+Ownable.sol
+OperatorFiltererUpgradeable.sol
+OperatorFilterToggle.sol
+LazyMint.sol
+Drop.sol
+DelayedReveal.sol
+DefaultOperatorFiltererUpgradeable.sol
+ContractMetadata.sol
+BatchMintMetadata.sol
+IERC2981.sol
+IERC20.sol
+IERC165.sol
+ERC721AVirtualApproveUpgradeable.sol
+DropERC721.sol
+ABI

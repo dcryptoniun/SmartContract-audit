@@ -1,0 +1,11 @@
+Report on Smart Contract for META LEGEND APES:
+
+The smart contract for META LEGEND APES appears to be well-written and follows best practices. It includes several features such as Contract Metadata, Platform Fee, Royalty, Primary Sale, Ownable, DelayedReveal, LazyMint, PermissionsEnumerable, and Drop. The SPDX-License-Identifier is also included, indicating the license under which the code is released, and the code uses Solidity version 0.8.11.
+
+The contract defines a claim condition, which starts on March 17th, 2023, at 3:11 pm, and allows for the minting of 50 NFTs at a price of 0.025 WETH per token. There is also a limit of 10 tokens per wallet. The contract includes several roles, such as Admin, Creator, and Owner. The Admin role is held by two Ethereum addresses, 0xaD0467D741d65E3954248fEa502E900fb6C76ff9 and 0x85E6C2B9c8E24Daa0E0F85CD97266b2Fe5964f74. The Creator role is held by 0xaD0467D741d65E3954248fEa502E900fb6C76ff9, and the Owner role is held by 0x85e6c2b9c8e24daa0e0f85cd97266b2fe5964f74.
+
+The contract includes several functions for managing permissions, such as grantRole() and revokeRole(). There are also functions for managing token minting and transfer, such as mintToken() and transferToken(). However, it is worth noting that the contract allows the Admin to change the royalty percentage, wallet, and even add their wallet for additional royalties, which could potentially be a security threat.
+
+The META LEGEND APES NFTs have a name of MLA, a symbol of MLA, and a total supply of 5000. As of March 20th, 2023, only one NFT has been claimed. The NFTs can be viewed on OpenSea at https://opensea.io/collection/meta-legend-apes, and the project's website is https://www.metalegendapes.xyz.
+
+Overall, the contract appears to be well-designed and follows best practices, but a more thorough audit would be necessary to identify any potential vulnerabilities or issues with the contract. Additionally.  there is a potential threat that the admin can change the royalty percentage, wallet, and even add their wallet for additional royalty. This could potentially harm the interests of the other stakeholders, such as the creator and the owner, and may require further investigation.
